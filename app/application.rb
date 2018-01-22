@@ -4,6 +4,7 @@ class Application
 
   def call(env)
     @@cart = {}
+    
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
