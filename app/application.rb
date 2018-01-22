@@ -1,7 +1,7 @@
 require 'pry'
 
 class Application
-  @@cart = {}
+  @@cart = []
   @@items = ["Apples","Carrots","Pears"]
 
   def call(env)
