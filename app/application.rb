@@ -22,7 +22,6 @@ class Application
     if req.path.match(/cart/)
       @@cart.each do |cart|
         resp.wrtie "#{cart}\n"
-    elsif 
 
     resp.finish
   end
