@@ -25,6 +25,7 @@ class Application
       end
     elsif req.path.match(/add/)
       binding.pry
+    end
 
 
     else
