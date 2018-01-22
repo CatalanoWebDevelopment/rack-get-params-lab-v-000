@@ -19,6 +19,7 @@ class Application
       # binding.pry
       if @@cart.empty?
         resp.write "Your cart is empty"
+      else
       end
 
     else
