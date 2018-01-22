@@ -4,7 +4,7 @@ class Application
 
   def call(env)
     @@cart = {}
-    
+
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
@@ -20,6 +20,8 @@ class Application
     end
 
     if req.path.match(/cart/)
+      @@cart.each do |cart|
+        resp.wrtie "#{cart}\n"
 
     resp.finish
   end
