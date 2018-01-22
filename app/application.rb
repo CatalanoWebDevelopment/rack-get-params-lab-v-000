@@ -28,7 +28,7 @@ class Application
       if @@items.include?(req.params["item"])
       @@cart << req.params["item"]
       else
-        resp.write
+        resp.write "This is not a valid item"
 
 
 
