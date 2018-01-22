@@ -26,7 +26,7 @@ class Application
       end
     elsif req.path.match(/add/)
       binding.pry
-      req.params["item"]
+      @@cart << req.params["item"]
 
 
 
