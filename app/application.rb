@@ -29,7 +29,7 @@ class Application
       @@cart << req.params["item"]
       resp.write "Added #{req.params['item']}"
       else
-        resp.write "This is not a valid item"
+        resp.write "We don't have that item"
       end
 
 
